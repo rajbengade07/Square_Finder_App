@@ -1,0 +1,113 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+  transition: background 0.5s ease;
+}
+
+/* Centered Container */
+center {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  padding: 50px 40px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Header Style */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Input Field */
+input[type="number"] {
+  width: 80%;
+  padding: 15px 20px;
+  margin: 15px 0;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #fff;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 2px solid #f3a847;
+}
+
+/* Submit Button */
+input[type="submit"] {
+  padding: 12px 30px;
+  border-radius: 25px;
+  background-color: #f3a847;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #f0842a;
+}
+
+/* Message Display */
+#msg {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Keyframes for Fade-in Effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input[type="number"] {
+    width: 90%;
+  }
+}
